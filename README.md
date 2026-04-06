@@ -1,4 +1,4 @@
-# CP1 — Modelo Entidade-Relacionamento (MER) e Criação do Projeto WebAPI
+# CP2 — Persistência com EF Core, Mapeamento e Camada de Infraestrutura
 
 ## 👥 Integrantes do Grupo
 
