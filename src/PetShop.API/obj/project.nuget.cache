@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yIK7C7R3Q9U=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moise\\RiderProjects\\cp1-.net-petshop-project\\src\\PetShop.API\\PetShop.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moise\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "C:\\Users\\moise\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
