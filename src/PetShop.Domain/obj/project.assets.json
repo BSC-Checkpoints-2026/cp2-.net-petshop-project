@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moise\\RiderProjects\\cp1-.net-petshop-project\\src\\PetShop.Domain\\PetShop.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\src\\PetShop.Domain\\PetShop.Domain.csproj",
       "projectName": "PetShop.Domain",
-      "projectPath": "C:\\Users\\moise\\RiderProjects\\cp1-.net-petshop-project\\src\\PetShop.Domain\\PetShop.Domain.csproj",
+      "projectPath": "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\src\\PetShop.Domain\\PetShop.Domain.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moise\\RiderProjects\\cp1-.net-petshop-project\\src\\PetShop.Domain\\obj\\",
+      "outputPath": "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\src\\PetShop.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config"
