@@ -18,9 +18,9 @@ public class Appointment : BaseEntity
     
     // Relacionementos N:1
 
-    public List<Pet> Pets { get; private set; } = new List<Pet>();
-    public List<Service> Services { get; private set; } = new List<Service>();
-    public List<Employee> Employee { get; private set; } = new List<Employee>();
+    public Pet Pet { get; private set; } = null!;
+    public Service Service { get; private set; } = null!;
+    public Employee Employee { get; private set; } = null!;
     
     // Construtor
 
