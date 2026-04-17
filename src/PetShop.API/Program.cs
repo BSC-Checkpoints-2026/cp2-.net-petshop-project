@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PetShop.Application.Interfaces.Customer;
+using PetShop.Application.Services;
 using PetShop.Infrastructure.Context;
 using PetShop.Infrastructure.Repositories;
 
@@ -19,6 +20,7 @@ public class Program
             options.UseSqlite("Data Source=petshop.db"));
 
         builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+        builder.Services.AddScoped<ICustomerService, CustomerService>();
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())
