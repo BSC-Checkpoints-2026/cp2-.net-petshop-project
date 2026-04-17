@@ -2522,6 +2522,7 @@
       "Microsoft.AspNetCore.OpenApi >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.6",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.6",
+      "PetShop.Application >= 1.0.0",
       "PetShop.Infrastructure >= 1.0.0"
     ]
   },
@@ -2550,6 +2551,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\PetShop.Application\\PetShop.Application.csproj": {
+              "projectPath": "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\PetShop.Application\\PetShop.Application.csproj"
+            },
             "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\PetShop.Infrastructure\\PetShop.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\moise\\RiderProjects\\cp2-.net-petshop-project\\PetShop.Infrastructure\\PetShop.Infrastructure.csproj"
             }
