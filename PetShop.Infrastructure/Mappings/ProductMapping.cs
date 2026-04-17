@@ -25,5 +25,10 @@ public class ProductMapping : IEntityTypeConfiguration<Product>
 
         builder.HasIndex(p => p.Name)
             .IsUnique();
+        
+        builder.HasMany(p => p.OrderItems)
+            .WithOne(oi => oi.Product)
+            .HasForeignKey(oi => oi.ProductId)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }
