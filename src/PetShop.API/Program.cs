@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using PetShop.Application.Interfaces;
+using PetShop.Application.Interfaces.Customer;
 using PetShop.Infrastructure.Context;
 using PetShop.Infrastructure.Repositories;
 
