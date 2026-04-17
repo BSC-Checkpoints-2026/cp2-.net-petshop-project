@@ -10,16 +10,13 @@ public class Product : BaseEntity
     
     public decimal Price { get; private set; }
     
-    public int StockQuantity { get; private set; }
-    
     // Relacionamento 1:N
     public List<OrderItem> OrderItems { get; private set; } = new List<OrderItem>();
 
-    public Product(string name, string description, decimal price, int stockQuantity)
+    public Product(string name, string description, decimal price)
     {
         Name = name;
         Description = description;
         Price = price;
-        StockQuantity = stockQuantity;
     }
 }
