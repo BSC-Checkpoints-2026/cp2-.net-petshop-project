@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetShop.Application.Interfaces;
+using PetShop.Application.Interfaces.Customer;
 using PetShop.Domain.Entities;
 using PetShop.Infrastructure.Context;
 

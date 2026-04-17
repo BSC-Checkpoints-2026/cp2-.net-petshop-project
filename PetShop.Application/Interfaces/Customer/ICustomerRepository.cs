@@ -1,6 +1,6 @@
-﻿using PetShop.Domain.Entities;
+﻿namespace PetShop.Application.Interfaces.Customer;
 
-namespace PetShop.Application.Interfaces;
+using PetShop.Domain.Entities;
 
 public interface ICustomerRepository
 {
