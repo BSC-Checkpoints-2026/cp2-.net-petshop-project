@@ -253,3 +253,5 @@ C:\Users\moise\RiderProjects\cp2-.net-petshop-project\src\PetShop.API\bin\Debug\
 C:\Users\moise\RiderProjects\cp2-.net-petshop-project\src\PetShop.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\moise\RiderProjects\cp2-.net-petshop-project\src\PetShop.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\moise\RiderProjects\cp2-.net-petshop-project\src\PetShop.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\moise\RiderProjects\cp2-.net-petshop-project\src\PetShop.API\bin\Debug\net10.0\PetShop.Application.dll
+C:\Users\moise\RiderProjects\cp2-.net-petshop-project\src\PetShop.API\bin\Debug\net10.0\PetShop.Application.pdb

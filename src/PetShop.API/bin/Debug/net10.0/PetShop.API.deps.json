@@ -11,6 +11,7 @@
           "Microsoft.AspNetCore.OpenApi": "10.0.5",
           "Microsoft.EntityFrameworkCore.Design": "10.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "10.0.6",
+          "PetShop.Application": "1.0.0",
           "PetShop.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -659,6 +660,17 @@
           }
         }
       },
+      "PetShop.Application/1.0.0": {
+        "dependencies": {
+          "PetShop.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PetShop.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "PetShop.Domain/1.0.0": {
         "runtime": {
           "PetShop.Domain.dll": {
@@ -671,6 +683,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "10.0.6",
+          "PetShop.Application": "1.0.0",
           "PetShop.Domain": "1.0.0"
         },
         "runtime": {
@@ -904,6 +917,11 @@
       "sha512": "sha512-aRZlojCCGEHDKqh43jaDgaVpYETsgd7Nx4g1zwLKMtv4iTo0627715ajEFNpEEBTgLmvZuv8K0EVxc3sM4NWJA==",
       "path": "system.composition.typedparts/9.0.0",
       "hashPath": "system.composition.typedparts.9.0.0.nupkg.sha512"
+    },
+    "PetShop.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "PetShop.Domain/1.0.0": {
       "type": "project",
