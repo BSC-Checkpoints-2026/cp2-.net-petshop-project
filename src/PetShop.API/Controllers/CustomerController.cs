@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PetShop.Application.Interfaces;
+using PetShop.Application.Interfaces.Customer;
 using PetShop.Domain.Entities;
 
 namespace PetShop.Controllers;
