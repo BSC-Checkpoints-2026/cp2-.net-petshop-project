@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PetShop.Application.Interfaces.Customer;
+using PetShop.Application.Interfaces.Product;
 using PetShop.Application.Services;
 using PetShop.Infrastructure.Context;
 using PetShop.Infrastructure.Repositories;
@@ -21,6 +22,9 @@ public class Program
 
         builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
         builder.Services.AddScoped<ICustomerService, CustomerService>();
+        
+        builder.Services.AddScoped<IProductRepository, ProductRepository>();
+        builder.Services.AddScoped<IProductService, ProductService>();
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())
