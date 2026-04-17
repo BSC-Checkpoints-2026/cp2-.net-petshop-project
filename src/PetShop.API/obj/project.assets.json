@@ -828,6 +828,19 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "PetShop.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "PetShop.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PetShop.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetShop.Application.dll": {}
+        }
+      },
       "PetShop.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -844,6 +857,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "10.0.6",
+          "PetShop.Application": "1.0.0",
           "PetShop.Domain": "1.0.0"
         },
         "compile": {
@@ -2486,6 +2500,11 @@
         "system.composition.typedparts.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "PetShop.Application/1.0.0": {
+      "type": "project",
+      "path": "../../PetShop.Application/PetShop.Application.csproj",
+      "msbuildProject": "../../PetShop.Application/PetShop.Application.csproj"
     },
     "PetShop.Domain/1.0.0": {
       "type": "project",
