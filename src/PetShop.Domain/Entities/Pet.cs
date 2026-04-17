@@ -14,7 +14,7 @@ public class Pet : BaseEntity
 
     // FK para o dono (Customer N:1)
     public Guid CustomerId { get; private set; }
-    public Customer Customer { get; private set; }
+    public Customer Customer { get; private set; } = null!;
 
     // 1:N com Appointment
     public List<Appointment> Appointments { get; private set; } = new List<Appointment>();

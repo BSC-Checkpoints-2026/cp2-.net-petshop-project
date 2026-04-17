@@ -10,7 +10,7 @@ public class Order : BaseEntity
     
     public Guid CustomerId { get; private set; }
 
-    public Customer Customer { get; private set; }
+    public Customer Customer { get; private set; } = null!;
 
     // Relacionamento 1:N
     public List<OrderItem> OrderItems { get; private set; } = new();
