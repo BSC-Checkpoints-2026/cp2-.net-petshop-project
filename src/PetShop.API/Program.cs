@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using PetShop.Application.Interfaces;
 using PetShop.Infrastructure.Context;
+using PetShop.Infrastructure.Repositories;
 
 namespace petShop;
 
@@ -9,13 +11,13 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
 
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlite("Data Source=petshop.db"));
 
+        builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())
