@@ -3,6 +3,7 @@ using PetShop.Application.Interfaces.Appointment;
 using PetShop.Application.Interfaces.Customer;
 using PetShop.Application.Interfaces.Pet;
 using PetShop.Application.Interfaces.Product;
+using PetShop.Application.Interfaces.Service;
 using PetShop.Application.Services;
 using PetShop.Infrastructure.Context;
 using PetShop.Infrastructure.Repositories;
@@ -33,6 +34,9 @@ public class Program
       
         builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
         builder.Services.AddScoped<IAppointmentService, AppointmentService>();
+        
+        builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+        builder.Services.AddScoped<IServiceService, ServiceService>();
         
         var app = builder.Build();
 
