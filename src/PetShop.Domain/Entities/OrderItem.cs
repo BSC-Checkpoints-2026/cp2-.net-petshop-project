@@ -5,19 +5,19 @@ namespace PetShop.Domain.Entities;
 public class OrderItem : BaseEntity
 {
     public int Quantity { get; private set; }
-    
     public decimal UnitPrice { get; private set; }
-    
-    // Relacionamentos N:1
-    public List<Order> Order { get; private set; } = new List<Order>();
 
-    public List<Product> Product { get; private set; } = new List<Product>();
-    
-    // Construtor
+    public Guid OrderId { get; private set; }
+    public Guid ProductId { get; private set; }
 
-    public OrderItem(int quantity, decimal unitPrice)
+    public Order Order { get; private set; } = null!;
+    public Product Product { get; private set; } = null!;
+
+    public OrderItem(int quantity, decimal unitPrice, Guid orderId, Guid productId)
     {
         Quantity = quantity;
         UnitPrice = unitPrice;
+        OrderId = orderId;
+        ProductId = productId;
     }
 }
