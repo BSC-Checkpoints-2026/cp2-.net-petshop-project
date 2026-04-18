@@ -5,9 +5,9 @@ namespace PetShop.Domain.Entities;
 public class Order : BaseEntity
 {
     public DateTime OrderDate { get; private set; }
-    
+
     public decimal TotalAmount { get; private set; }
-    
+
     public Guid CustomerId { get; private set; }
 
     public Customer Customer { get; private set; } = null!;
@@ -15,9 +15,10 @@ public class Order : BaseEntity
     // Relacionamento 1:N
     public List<OrderItem> OrderItems { get; private set; } = new();
 
-    public Order(DateTime orderDate, decimal totalAmount)
+    public Order(DateTime orderDate, decimal totalAmount, Guid customerId)
     {
         OrderDate = orderDate;
         TotalAmount = totalAmount;
+        CustomerId = customerId;
     }
 }
