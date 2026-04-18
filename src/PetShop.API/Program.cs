@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PetShop.Application.Interfaces.Appointment;
 using PetShop.Application.Interfaces.Customer;
+using PetShop.Application.Interfaces.Employee;
 using PetShop.Application.Interfaces.Pet;
 using PetShop.Application.Interfaces.Product;
 using PetShop.Application.Interfaces.Service;
@@ -37,6 +38,9 @@ public class Program
         
         builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
         builder.Services.AddScoped<IServiceService, ServiceService>();
+        
+        builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+        builder.Services.AddScoped<IEmployeeService, EmployeeService>();
         
         var app = builder.Build();
 
