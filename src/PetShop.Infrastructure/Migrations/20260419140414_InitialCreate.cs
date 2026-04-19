@@ -201,6 +201,18 @@ namespace PetShop.Infrastructure.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_Customers_Email",
+                table: "Customers",
+                column: "Email",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Customers_PhoneNumber",
+                table: "Customers",
+                column: "PhoneNumber",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Employees_Email",
                 table: "Employees",
                 column: "Email",

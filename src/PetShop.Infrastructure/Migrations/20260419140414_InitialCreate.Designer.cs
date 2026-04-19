@@ -11,8 +11,8 @@ using PetShop.Infrastructure.Context;
 namespace PetShop.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260419132240_AddUniqueIndexesToCustomer")]
-    partial class AddUniqueIndexesToCustomer
+    [Migration("20260419140414_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
