@@ -100,7 +100,15 @@ Os relacionamentos entre as entidades do sistema foram definidos da seguinte for
    Abra a pasta em seu editor de código.
 <br/>
 
-2. **Execute a API**  
+2. **Crie o Banco de Dados**  
+  No terminal, execute o comando:
+
+   ```bash
+   dotnet ef database update --project src/PetShop.Infrastructure --startup-project src/PetShop.API
+   ```
+<br/>
+
+3. **Execute a API**  
   No terminal, execute o comando:
 
    ```bash
@@ -108,13 +116,15 @@ Os relacionamentos entre as entidades do sistema foram definidos da seguinte for
    ```
 <br/>
 
-3. **Acesse o Swagger pelo navegador:**  
+4. **Acesse o Swagger pelo navegador:**  
   No navegador, digite a URL:
 
    ```bash
    https://localhost:xxxx/swagger
    ```
+   Faça os testes necessários.
 <br/>
+ 
       
 ---
 
@@ -146,6 +156,11 @@ Os relacionamentos entre as entidades do sistema foram definidos da seguinte for
 
 ---
 
+## 🗄️ Banco de Dados (SGBD)
+O sistema utiliza o **SQLite** como Sistema Gerenciador de Banco de Dados.
+
+---
+
 ## 🖼️ Banco de Bados (SQLite prints)
 ### Table Customers:
 <img src="https://res.cloudinary.com/dt26mfzpw/image/upload/v1776616211/table-customers_gylzoy.png" width="1600" height="1000">
@@ -154,3 +169,18 @@ Os relacionamentos entre as entidades do sistema foram definidos da seguinte for
 ### Table Products:
 <img src="https://res.cloudinary.com/dt26mfzpw/image/upload/v1776616210/table-products_ot8h3a.png" width="1600" height="1000">
 <br/>
+
+---
+
+## 🛠️ Ferramenta de Desenvolvimento
+- JetBrains Rider  
+
+---
+
+## 👨‍💻 Tecnologias Utilizadas
+- Entity Framework Core
+- ASP.NET Core
+- SQLite (SGDB)
+- Swagger
+  
+---
