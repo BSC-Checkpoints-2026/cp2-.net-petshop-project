@@ -79,6 +79,41 @@ Os relacionamentos entre as entidades do sistema foram definidos da seguinte for
 
 ---
 
+## 🏗️ Arquitetura do Projeto
+O projeto foi desenvolvido seguindo os princípios de **Clean Architecture**.
+As camadas estão organizadas da seguinte forma:
+
+### Domain
+Contém o núcleo da aplicação:
+- Entidades
+- Enums
+- Classes base (BaseEntity)
+
+### Application
+Define como o sistema funciona:
+- DTOs
+- Interfaces
+- Serviços
+
+### Infrastructure
+Camada responsável pela persistência de dados:
+- DbContext (EF Core)
+- Mapeamentos
+- Repositórios
+- Migrations
+
+### API
+Camada responsável por receber e responder requisições:
+- Controllers
+- Configuração da aplicação
+- Endpoints HTTP
+
+### Comunicação entre Camadas
+
+A comunicação entre as camadas é realizada por meio de **Injeção de Dependência (Dependency Injection)**.
+
+---
+
 ## ▶️ Como Executar a API:
 ### ⚠️ Pré-requisitos
   - JetBrains Rider (ou outro IDE)
@@ -120,7 +155,7 @@ Os relacionamentos entre as entidades do sistema foram definidos da seguinte for
   No navegador, digite a URL:
 
    ```bash
-   https://localhost:xxxx/swagger
+   https://localhost:5171/swagger
    ```
    Faça os testes necessários.
 <br/>
@@ -161,7 +196,7 @@ O sistema utiliza o **SQLite** como Sistema Gerenciador de Banco de Dados.
 
 ---
 
-## 🖼️ Banco de Bados (SQLite prints)
+## 🖼️ Banco de Dados (SQLite prints)
 ### Table Customers:
 <img src="https://res.cloudinary.com/dt26mfzpw/image/upload/v1776616211/table-customers_gylzoy.png" width="1600" height="1000">
 <br/>
