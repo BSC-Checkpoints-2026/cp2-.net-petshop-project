@@ -90,6 +90,12 @@ namespace PetShop.Infrastructure.Migrations
                     b.HasIndex("Cpf")
                         .IsUnique();
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("PhoneNumber")
+                        .IsUnique();
+
                     b.ToTable("Customers", (string)null);
                 });
 
