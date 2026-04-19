@@ -24,7 +24,10 @@ public class Program
         builder.Services.AddSwaggerGen();
 
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlite("Data Source=petshop.db"));
+            options.UseSqlite(
+                builder.Configuration.GetConnectionString("DefaultConnection")
+            )
+        );
 
         builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
         builder.Services.AddScoped<ICustomerService, CustomerService>();
