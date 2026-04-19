@@ -38,6 +38,12 @@ public class CustomerMapping : IEntityTypeConfiguration<Customer>
 
         builder.HasIndex(c => c.Cpf)
             .IsUnique();
+        
+        builder.HasIndex(c => c.Email)
+            .IsUnique();
+        
+        builder.HasIndex(c => c.PhoneNumber)
+            .IsUnique();
 
         builder.HasMany(c => c.Pets)
             .WithOne(p => p.Customer)
